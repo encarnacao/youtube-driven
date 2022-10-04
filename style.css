@@ -1,0 +1,120 @@
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-topo {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+  border: 1px solid grey;
+}
+.busca {
+  width: 200px;
+  height: 40px;
+  border: 1px solid grey;
+}
+.login {
+  width: 200px;
+  height: 40px;
+  border: 1px solid grey;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+  /* Tira negito */
+}
+h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.container-principal {
+  display: flex;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.container-menu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 80px;
+  height: 80px;
+}
+
+.container-menu div:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.container-menu img {
+  width: 30px;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.video {
+  background-color: red;
+  width: 250px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+img {
+  width: 250px;
+}
+
+.titulo {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.subtitulo {
+  font-size: 14px;
+}
+
+.cinza {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+Break point -> 600 px
+Basicamente funciona como um "if max-width <= 600 px"
+*/
+@media (max-width: 600px) {
+  .container-menu {
+    /*
+    Oculta o menu lateral quando a largura <= 600 px;
+    */
+    display: none;
+  }
+}
